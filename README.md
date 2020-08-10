@@ -1,4 +1,6 @@
-# quiz
+# Country Directory
+A Directory of countries their states and cities
+A wejapa internship task
 
 ## Project setup
 ```
