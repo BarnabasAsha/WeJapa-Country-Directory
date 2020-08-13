@@ -37,7 +37,7 @@ export default {
     return {
       countries: [],
       states: [],
-      cities: [],
+      cities: []
     }
   },
   methods: {
@@ -45,7 +45,7 @@ export default {
      fetch(`https://www.universal-tutorial.com/api/states/${e.target.value}`, {
       method: 'get',
       headers: {
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3MTYxMDIyfQ.LQbb5zmY9NDNpaZgg04nwRH907nvdUzu-eZbxfSJAYU',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3NDQyMDQwfQ.PVOnLxttkHbsFHqYpgZPVLqX3aYgPwXp3pWKQBRyU0E',
         'Accept': 'application/json',
       }
     })
@@ -62,7 +62,7 @@ export default {
     await fetch(`https://www.universal-tutorial.com/api/cities/${e.target.value}`, {
       method: 'get',
       headers: {
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3MTYxMDIyfQ.LQbb5zmY9NDNpaZgg04nwRH907nvdUzu-eZbxfSJAYU',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3NDQyMDQwfQ.PVOnLxttkHbsFHqYpgZPVLqX3aYgPwXp3pWKQBRyU0E',
         'Accept': 'application/json',
       }
     })
@@ -80,7 +80,7 @@ export default {
     fetch('https://www.universal-tutorial.com/api/countries/', {
       method: 'get',
       headers: {
-        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3MTYxMDIyfQ.LQbb5zmY9NDNpaZgg04nwRH907nvdUzu-eZbxfSJAYU',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJfZW1haWwiOiJiYXJuYWJlZTU4QGdtYWlsLmNvbSIsImFwaV90b2tlbiI6ImVWYTdjb1ZKSnpXaGtHb25LNjBibUJTR29ReHM3ajgwSllGbVZMcVNoVmhXa3Mwa24tb2ZsMndWMjJSb3drTlpkZWMifSwiZXhwIjoxNTk3NDQyMDQwfQ.PVOnLxttkHbsFHqYpgZPVLqX3aYgPwXp3pWKQBRyU0E',
         'Accept': 'application/json',
       }
     })
