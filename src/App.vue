@@ -81,12 +81,15 @@ export default {
 </script>
 
 <style>
+body {
+  background: #1D3557;
+}
 #app {
   box-sizing: border-box;
   width: 100%;
-  background: #FBFBFB;
-  color: #000080;
+  color: #A8DADC;
   height: 100vh;
+  padding: 2em;
 }
 
 .main {
@@ -103,7 +106,9 @@ select {
   padding: 10px 10px;
   margin: 0.5em 0;
   border-radius: 5px;
-  border: 1px solid #000080;
+  border: 2px solid #A8DADC;
+  background: #f1f0f0;
+  color: #1D3557;
 }
 
 option {
@@ -112,5 +117,7 @@ option {
     white-space: pre;
     min-height: 1.2em;
     padding: 0px 2px 1px;
+    background: #f1f0f0;
+    color: #1D3557;
 }
 </style>
