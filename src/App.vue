@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     async getStates(e) {
-     await fetch(`http://allcountries.us-east-2.elasticbeanstalk.com/countries/details/${e.target.value}`)
+     await fetch(`https://cors-anywhere.herokuapp.com/http://allcountries.us-east-2.elasticbeanstalk.com/countries/details/${e.target.value}`)
     .then(res => {
       return res.json()
     }).then(data => {
@@ -54,7 +54,7 @@ export default {
       this.currentCountry = e.target.value
     },
     async getCities(e) {
-    await fetch(`http://allcountries.us-east-2.elasticbeanstalk.com/countries/details/${this.currentCountry}`)
+    await fetch(`https://cors-anywhere.herokuapp.com/http://allcountries.us-east-2.elasticbeanstalk.com/countries/details/${this.currentCountry}`)
     .then(res => {
       return res.json()
     }).then(data => {
@@ -69,7 +69,7 @@ export default {
   },
 
   mounted: function() {
-  fetch('http://allcountries.us-east-2.elasticbeanstalk.com/countries/list')
+  fetch('https://cors-anywhere.herokuapp.com/http://allcountries.us-east-2.elasticbeanstalk.com/countries/list')
     .then((res) => {
       return res.json()
     })
